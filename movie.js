@@ -1,4 +1,4 @@
-const apiLink = `http://www.omdbapi.com/?=&apikey=306dc500`;
+const apiLink = `https://www.omdbapi.com/?=&apikey=306dc500`;
 
 function searchMovie(url) {
   fetch(url).then(response => response.json()).then(data => {
@@ -47,13 +47,13 @@ const SearchButton = document.getElementById('search-icon')
 
 let searchApi = '', movieName = '';
 
-searchApi = `http://www.omdbapi.com/?s=avatar&apikey=306dc500`;
+searchApi = `https://www.omdbapi.com/?s=avatar&apikey=306dc500`;
 
 searchMovie(searchApi);
 
 function getSearch() {
   movieName = input.value
-  searchApi = `http://www.omdbapi.com/?s=${movieName}&apikey=306dc500`;
+  searchApi = `https://www.omdbapi.com/?s=${movieName}&apikey=306dc500`;
 
   searchMovie(searchApi);
 
