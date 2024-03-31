@@ -32,7 +32,7 @@ function searchMovie(url) {
       })
 
     } else {
-      alert('Sorry, ' + data.Error)
+      alert('Sorry, ' + data.Error + `for ${input.value}`)
     }
   })
     .catch(error => {
